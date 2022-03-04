@@ -37,22 +37,24 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ccber" href="../ccber/description.html" />
-    <link rel="prev" title="calcofi" href="../calcofi/description.html" />
+    <link rel="next" title="Update 1 - (2/4/22)" href="update1.html" />
+    <link rel="prev" title="CalCOFI Initial Progress and Goal Definition" href="../calcofi/calcofi-update1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -170,11 +172,21 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../../class/progress-update-second-post-guidelines.html">
+     Second post (due Friday 3/4)
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../../class/progress-update-posting-instructions.html">
      How to post project updates
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/presentation-guidelines-winter.html">
+   Interim presentation guidelines
+  </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -185,38 +197,53 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../allthenticate/description.html">
-   allthenticate
+   Allthenticate
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../allthenticate/update1.html">
+     Project Update 1 (2/4/2022)
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../appfolio/description.html">
-   appfolio
+   AppFolio
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../appfolio/update1.html">
+     Starting the Project
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../calcofi/description.html">
-   calcofi
+   CalCOFI Project
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi/calcofi-update1.html">
+     CalCOFI Initial Progress and Goal Definition
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
@@ -228,7 +255,17 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="update1.html">
+     Update 1 - (2/4/22)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="update2.html">
+     Update 2 - (3/4/22)
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -240,7 +277,12 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ccber/update1.html">
+     Update 1
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -252,19 +294,34 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cits/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cits/update2.html">
+     Update 2
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../envent/description.html">
-   envent
+   ENVENT Lab
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
   <label for="toctree-checkbox-9">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../envent/projectupdate1.html">
+     Survey Pre-Processing
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -276,7 +333,12 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../eri/update1.html">
+     Update 1
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -288,19 +350,29 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_eric/update1.html">
+     Evidation Health Project Update 1
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../evidation_julio/description.html">
-   evidation (Julio’s team)
+   Evidation (Julio’s team)
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
   <label for="toctree-checkbox-12">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_julio/Update2_4_22.html">
+     Evidation Update (Julio’s team)
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1">
@@ -310,7 +382,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../nri/description.html">
-   nri
+   NRI
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
   <label for="toctree-checkbox-13">
@@ -320,31 +392,26 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../nri/update1.html">
-     NRI - Update 1
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../nri/update2.html">
-     NRI - Update 2
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../nri/update3.html">
-     NRI - Update 3
+     NRI Group Update 1
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../pwc/description.html">
-   pwc
+   PwC
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
   <label for="toctree-checkbox-14">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../pwc/Update_1.html">
+     Update 1: Preliminaries
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -356,7 +423,12 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sprague/Sprague_group_update_01.html">
+     Update 1
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -463,7 +535,10 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="carpedata">
 <h1>carpedata<a class="headerlink" href="#carpedata" title="Permalink to this headline">¶</a></h1>
-<p>Project description</p>
+<p><img alt="" src="../../_images/carpedatalogo.png" /></p>
+<p>Carpe Data is an insurance technology company whose headquarters is located in Santa Barbara, California. Carpe Data gathers and analyzes data from sources such as social media platforms and web content in order to provide insurance companies with data solutions. Insurance companies typically receive a significant amount of claims each year; Carpe Data helps to reduce the amount of manual inspection needed to verify these claims through the use of their algorithms.</p>
+<p>Our capstone team’s project focuses on building machine learning models in Python that predict whether or not a web page contains evidence about a fraud claim and provide information about the specific type of fraudulent activity that is present.</p>
+<p>Our project sponsors are Crystal Zhang and Kevin Neal from Carpe Data. Our mentor is Joshua Bang, and our team members are Tyler Chia, Anum Damani, Annie Huang, Alex Rudolph, and Rithvik Vobbilisetty.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -493,17 +568,17 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../calcofi/description.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../calcofi/calcofi-update1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">calcofi</p>
+            <p class="prev-next-title">CalCOFI Initial Progress and Goal Definition</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../ccber/description.html" title="next page">
+    <a class='right-next' id="next-link" href="update1.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ccber</p>
+        <p class="prev-next-title">Update 1 - (2/4/22)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
